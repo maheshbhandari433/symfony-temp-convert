@@ -5,7 +5,12 @@
 # https://symfony.com/doc/current/best_practices.html#use-parameters-for-application-configuration
 parameters:
 
-services:
+services: 
+    App\Controller\example:
+        class: 'App\Controller\example'
+        arguments:
+        - []
+
     # default configuration for services in *this* file
     _defaults:
         autowire: true      # Automatically injects dependencies in your services.
